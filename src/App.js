@@ -13,7 +13,7 @@ class App extends Component {
 
   componentDidMount() {
 
-    fetch(process.env.REACT_APP_API_URL, '/books')
+    fetch(process.env.REACT_APP_API_URL+'/books')
       .then(response => response.json())
       .then(res => {
         if (res && res.data) {
